@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
+ 
+  <!--- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700
+-->
+</head>
+<body>
+  
+  <div class="main-container">
+  <div class="star"><img src=".\images\icon-star.svg" alt="" /></div>
+  <h1>How did we do?</h1>
+
+  <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    <ul>
+      <li><button class="btn">1</button></li>
+      <li><button class="btn">2</button></li>
+      <li><button class="btn">3</button></li>
+      <li><button class="btn">4</button></li>
+      <li><button class="btn">5</button></li>
+    </ul>
+
+    <button class="button-submit" id="submit">Submit</button>
+  </div>
+  <div class="thank-you hidden">
+    <div class="arrow-cont">
+      <button class="back-btn" id="back"><img class="btn-img" src=".\images\arrow.svg" alt=""><img class="hvr-img" src=".\images\arrow1.svg" alt=""></button>
+    </div>
+    <img class="image" src=".\images\illustration-thank-you.svg" alt="">
+    <p class="selection">You selected <span id="rating">none. Please go back and select a number.</span></p>
+
+    <h1>Thank you!</h1>
+
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+  </div>
+
+  <!-- Thank you state end -->
+  <script src="index.js"></script>
+</body>
+</html>
