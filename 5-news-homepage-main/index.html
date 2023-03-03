@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="assets\fonts\Inter-VariableFont_slnt,wght.ttf">
+  <link rel="preconnect" href="assets\fonts\Inter-VariableFont_slnt,wght.ttf" crossorigin>
+  <link href="assets\fonts\Inter-VariableFont_slnt,wght.ttf" rel="stylesheet">
+
+  <title>Frontend Mentor | News homepage</title>
+  <script src="script.js"></script>
+</head>
+<body>
+<div id="opacity" class="hidden"></div>
+<header>
+  <div>
+  <img class="logo" src="assets\images\logo.svg">
+  </div>
+  <nav id="mySidenav" class="sidenav">
+    <ul>
+      <li><a>Home</a></li>
+      <li><a>New</a></li>
+      <li><a>Popular</a></li>
+      <li><a>Trending</a></li>
+      <li><a>Categories</a></li>
+    </ul>
+  </nav>
+  <div class="button-container">
+  <img id="open" onclick="openNav()" class="menu shown" src="assets\images\icon-menu.svg">
+  <img id="close" onclick="closeNav()" class="menu hidden" src="assets\images\icon-menu-close.svg">
+  </div>
+</header>
+
+
+<main class="container">
+
+<div class="top-cont">
+  
+  <!-- Left Container:  -->
+  <div class="left">
+    <picture>
+      <source media="(min-width: 768px)" srcset="assets\images\image-web-3-desktop.jpg">
+      <img src="assets\images\image-web-3-mobile.jpg"/>
+    </picture>
+
+    <div class="left-low">
+      <div class="left-heading"><h>The Bright Future of Web 3.0?</h></div>
+
+      <div class="left-3">
+        <div class="left-p"><p1>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p1></div>
+        <div class="btn"><button onclick="openNav()">Read more</button></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Right Container:  -->
+  <div class="right">
+    <h1 class="heading">New</h1>
+    <ul>
+      <li><h2 class="new-headings">Hydrogen VS Electric Cars</h2><p1>Will hydrogen-fueled cars ever catch up to EVs?</p1></li>
+      <li><h2 class="new-headings">The Downsides of AI Artistry</h2><p1>What are the possible adverse effects of on-demand AI image generation?</p1></li>
+      <li class="bottom-li"><h2 class="new-headings">Is VC Funding Drying Up?</h2><p1>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p1></li>
+    </ul>
+  </div>
+
+</div>
+
+
+<div class="bottom">
+
+  <div class="bottom-cont bottom-1">
+    <img src="assets\images\image-retro-pcs.jpg">
+    <div class="bottom-texts">
+      <h1>01</h1>
+      <a><h2>Reviving Retro PCs</h2></a>
+      <p1>What happens when old PCs are given modern upgrades?</p1>
+    </div>
+  </div>
+
+  <div class="bottom-cont bottom-2">
+    <img src="assets\images\image-top-laptops.jpg">
+    <div class="bottom-texts">
+      <h1>02</h1>
+      <a><h2>Top 10 Laptops of 2022</h2></a>
+      <p1>Our best picks for various needs and budgets.</p1>
+    </div>
+  </div>
+
+  <div class="bottom-cont bottom-3">
+  <img src="assets\images\image-gaming-growth.jpg">
+    <div class="bottom-texts">
+      <h1>03</h1>
+      <a><h2>The Growth of Gaming</h2></a>
+      <p1>How the pandemic has sparked fresh opportunities.</p1>
+    </div>
+  </div>
+
+</div>
+</main> 
+</body>
+</html>
